@@ -11,6 +11,7 @@ import PeerReviewExperience from "../Pages/PeerReviewExperience/PeerReviewExperi
 import TrainingAndCertification from "../Pages/TrainingAndCertification/TrainingAndCertification";
 import Family from "../Pages/Family/Family";
 import Hobby from "../Pages/Hobby/Hobby";
+import CurrentResearchInitiatives from "../Pages/CurrentResearchInitiatives/CurrentResearchInitiatives";
 
 export const route = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export const route = createBrowserRouter([
       {
         path: "/current-research-projects",
         element: <CurrentResearchProjects/>
+      },
+      {
+        path: "/current-research-initiatives",
+        element: <CurrentResearchInitiatives/>
       },
       {
         path: "/achievements",
