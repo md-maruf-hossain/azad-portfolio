@@ -3,15 +3,10 @@ import React from "react";
 const Hero = (quotes) => {
   const { name, quote } = quotes?.quotes;
   return (
-    <div className=" px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-        <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h2 className="mb-6 text-justify font-sans text-xl font-semibold text-green-600 sm:text-4xl md:mx-auto">{quote}</h2>
-            <p className="text-center text-gray-700 md:text-xl uppercase">{name}</p>
-          </div>
-        </div>
+    <div className="bg-gradient-to-r from-green-400 to-green-600 h-96 flex justify-center items-center text-white px-6">
+      <div className="max-w-4xl md:max-w-l text-center space-y-6">
+        <h1 className=" md:text-2xl lg:text- font-bold">"{quote}"</h1>
+        <p className="text-lg md:text-2xl font-light">- {name}</p>
       </div>
     </div>
   );

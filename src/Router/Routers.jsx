@@ -4,14 +4,11 @@ import Errorpage from "../Error/Errorpage";
 import Home from "../Pages/Home/Home";
 import Education from "../Pages/Education/Education";
 import ResearchProfileAndPublications from "../Pages/ResearchProfileAndPublications/ResearchProfileAndPublications";
-import CurrentResearchProjects from "../Pages/CurrentResearchProjects/CurrentResearchProjects";
 import Achievements from "../Pages/Achievements/Achievements";
 import AcademicProjects from "../Pages/AcademicProjects/AcademicProjects";
 import PeerReviewExperience from "../Pages/PeerReviewExperience/PeerReviewExperience";
-import TrainingAndCertification from "../Pages/TrainingAndCertification/TrainingAndCertification";
-import Family from "../Pages/Family/Family";
-import Hobby from "../Pages/Hobby/Hobby";
 import CurrentResearchInitiatives from "../Pages/CurrentResearchInitiatives/CurrentResearchInitiatives";
+import Others from "../Pages/Others/Others";
 
 export const route = createBrowserRouter([
   {
@@ -20,49 +17,37 @@ export const route = createBrowserRouter([
     errorElement: <Errorpage />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home />,
       },
       {
         path: "/education",
-        element: <Education/>
+        element: <Education />,
       },
       {
         path: "/research-profile-and-publications",
-        element: <ResearchProfileAndPublications/>
-      },
-      {
-        path: "/current-research-projects",
-        element: <CurrentResearchProjects/>
+        element: <ResearchProfileAndPublications />,
       },
       {
         path: "/current-research-initiatives",
-        element: <CurrentResearchInitiatives/>
+        element: <CurrentResearchInitiatives />,
       },
       {
         path: "/achievements",
-        element: <Achievements/>
+        element: <Achievements />,
       },
       {
         path: "/academic-projects",
-        element: <AcademicProjects/>
+        element: <AcademicProjects />,
       },
       {
         path: "/peer-review-experience",
-        element: <PeerReviewExperience/>
+        element: <PeerReviewExperience />,
       },
       {
-        path: "/training-and-certificates",
-        element: <TrainingAndCertification/>
+        path: "/others",
+        element: <Others />,
       },
-      {
-        path: "/family",
-        element: <Family/>
-      },
-      {
-        path: "/hobbies",
-        element: <Hobby/>
-      }
     ],
   },
 ]);
