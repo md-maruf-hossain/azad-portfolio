@@ -19,7 +19,7 @@ const Nav = () => {
 
           {/* Brand Name */}
           <div className="flex-1 text-white">
-            <Link to="/home" className=" text-xl font-bold">
+            <Link to="/" className=" text-xl font-bold">
               A M Almas Shahriyar Azad
             </Link>
           </div>
@@ -28,7 +28,7 @@ const Nav = () => {
           <div className="flex-none hidden lg:block text-white">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/education">Education</Link>
@@ -68,7 +68,7 @@ const Nav = () => {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 h-full bg-base-100 text-lg text-green-600">
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/education">Education</Link>

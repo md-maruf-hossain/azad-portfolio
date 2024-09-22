@@ -4,11 +4,10 @@ const Errorpage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50 px-4 text-center">
       {/* Large 404 text */}
-      <h1 className="text-9xl font-bold mb-4 text-red-600">404</h1>
+      <img src="/src/assets/error404/undraw_page_not_found_re_e9o6.svg" alt="" />
 
       {/* Error message */}
-      <p className="text-xl mb-4 text-red-600">Oops! Looks like you're lost.</p>
-
+      <br />
       {/* Additional error text */}
       <p className="text-md text-gray-600 mb-8">
         Sorry, we couldn't find this page. <br />
