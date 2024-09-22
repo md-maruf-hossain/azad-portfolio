@@ -2,7 +2,7 @@ import React from "react";
 
 const MyFamily = () => {
   return (
-    <div className="text-justify pb-10">
+    <div className="text-justify py-10">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-8">My Family</h1>
         <div className="space-y-10">

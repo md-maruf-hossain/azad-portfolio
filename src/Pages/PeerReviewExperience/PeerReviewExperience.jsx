@@ -28,7 +28,7 @@ const PeerReviewExperience = () => {
               </div>
               <p className="leading-relaxed text-base text-center">
                 <strong>
-                  1. Reviewer, Thermal Science and Engineering, EnPress Journals. <br /> (March 20, 2024 - Present)
+                  Reviewer, Thermal Science and Engineering, EnPress Journals. <br /> (March 20, 2024 - Present)
                 </strong>
                 <br /> <p className="font-semibold text-green-600 text-left mb-2">Key Responsibilities:</p>
                 <ul className="list-disc list-inside text-left">
@@ -44,7 +44,7 @@ const PeerReviewExperience = () => {
                 <img alt="Reviewer Roles" className="object-cover object-center h-full w-full pb-3" src="/src/assets/peerreview/2.jpg" />
               </div>
               <p className="leading-relaxed text-base text-center">
-                <strong>2. Certificate of Excellence in Reviewing, Journal of Energy Research and Reviews, Sciencedomain International</strong>
+                <strong>Certificate of Excellence in Reviewing, Journal of Energy Research and Reviews, Sciencedomain International</strong>
                 <br />
                 <p className="text-green-600 font-semibold text-left pb-3">Key Contributions:</p>
                 <ul className="list-disc list-inside text-left">
