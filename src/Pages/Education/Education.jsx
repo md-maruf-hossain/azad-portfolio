@@ -1,5 +1,7 @@
 import React from "react";
-import Hero from '../../Components/Hero';
+import Hero from "../../Components/Hero";
+import Academic from "./Academic";
+import Cetificastion from "./Cetificastion";
 
 const Education = () => {
   const quotes = {
@@ -10,7 +12,8 @@ const Education = () => {
   return (
     <div>
       <Hero quotes={quotes} />
-      Education
+      <Academic />
+      <Cetificastion />
     </div>
   );
 };
