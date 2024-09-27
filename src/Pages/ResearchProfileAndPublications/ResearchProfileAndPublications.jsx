@@ -1,5 +1,7 @@
 import React from "react";
 import Hero from '../../Components/Hero';
+import Journals from "./Journals";
+import Conference from "./Conference";
 
 const ResearchProfileAndPublications = () => {
   const quotes = {
@@ -9,7 +11,8 @@ const ResearchProfileAndPublications = () => {
   return (
     <div>
       <Hero quotes={quotes} />
-      Research Profile And Publications
+      <Journals/>
+      <Conference/>
     </div>
   );
 };
