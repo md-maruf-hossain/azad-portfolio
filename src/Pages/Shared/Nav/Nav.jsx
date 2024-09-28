@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close the dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -18,8 +35,8 @@ const Nav = () => {
           </div>
 
           {/* Brand Name */}
-          <div className="flex-1 text-white">
-            <Link to="/" className=" text-xl font-bold">
+          <div className="flex-1 text-white p-5">
+            <Link to="/" className="text-xl font-bold">
               A M Almas Shahriyar Azad
             </Link>
           </div>
@@ -33,10 +50,15 @@ const Nav = () => {
               <li>
                 <Link to="/education">Education</Link>
               </li>
-              <li tabIndex={0}>
-                <details>
-                  <summary>Research</summary>
-                  <ul className="p-2 bg-base-100 shadow-lg text-black">
+              <li ref={dropdownRef} onClick={() => setDropdownOpen(!dropdownOpen)} className="relative">
+                <span className="cursor-pointer">
+                  Research{" "}
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                {dropdownOpen && (
+                  <ul className="absolute left-0 top-full mt-2 bg--600 shadow-lg p-2">
                     <li>
                       <Link to="/research-profile-and-publications">Research Profile & Publications</Link>
                     </li>
@@ -44,7 +66,7 @@ const Nav = () => {
                       <Link to="/current-research-initiatives">Current Research Initiatives</Link>
                     </li>
                   </ul>
-                </details>
+                )}
               </li>
               <li>
                 <Link to="/achievements">Achievements</Link>
@@ -56,7 +78,7 @@ const Nav = () => {
                 <Link to="/peer-review-experience">Peer Review Experience</Link>
               </li>
               <li>
-              <Link to="/others">Others</Link>
+                <Link to="/others">Others</Link>
               </li>
             </ul>
           </div>
@@ -96,8 +118,7 @@ const Nav = () => {
             <Link to="/peer-review-experience">Peer Review Experience</Link>
           </li>
           <li>
-              <Link to="/others">Others</Link>
-
+            <Link to="/others">Others</Link>
           </li>
         </ul>
       </div>
