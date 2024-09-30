@@ -50,11 +50,11 @@ const AcademicProjects = () => {
       ],
     },
     {
-      title: "A Robot to Help the Health Workers",
+      title: "Designing and Prototyping an Affordable Robot to Help the Health Workers",
       courseTitle: "Product Design-II Sessional",
       courseNo: "IPE 3206",
       grade: "4.00 out of 4.00",
-      reportLink: "https://drive.google.com/file/d/1jWLzIslWsmGJEo626NETwwHUIrv1vem9/view", // Replace # with your report link
+      reportLink: "https://drive.google.com/file/d/14iZKCMBFb-AWhAWRJ7lHbueyHo5uX311/view", // Replace # with your report link
       overview:
         "The product aims to help the frontline health workers by keeping them away from COVID-19 patients. Basically, it is an android controlled robot that will be able to serve the COVID infected patients. The robot will have four wheels for locomotion and will be able to carry its own weight. Based upon orders from the controller it can go to the patients to assist them. A tray will be mounted on the body of the robot for transporting medicine. To assist the patients, a robotic arm will be connected. Sensors for temperature and oxygen saturation measurement will be added. From a safer distance, a microphone and speaker will be utilized to instruct and listen to the patients. For turning this idea into reality, at first, a survey was conducted on the medical specialists to understand their needs. Analyzing the survey result, the customer needs of the products are identified and prioritized. In order to fulfill those needs functional structure for the product was developed. The functional structure of the product reveals various sub functionalities of the product and 'How' it will serve its purpose. Then with the help of Quality Function Deployment (QFD), the customer needs are converted into well-defined specifications so that the device can properly be functional. Using Computer Aided Designing (CAD), the detailed design of the product is represented. Finally, a prototype of the design is developed for performance analysis. In this serious pandemic situation, while every day numerous patients and people are dying, robotic technology is essential in Bangladesh. Though, indeed, this technology will not solve the pandemic crisis, it will empower humans significantly in the battle against viruses.",
     },

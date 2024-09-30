@@ -58,7 +58,7 @@ const Nav = () => {
                   </svg>
                 </span>
                 {dropdownOpen && (
-                  <ul className="absolute left-0 top-full mt-2 bg--600 shadow-lg p-2">
+                  <ul className="absolute left-0 top-full mt-2 bg--600 shadow-lg p-2 bg-green-600">
                     <li>
                       <Link to="/research-profile-and-publications">Research Profile & Publications</Link>
                     </li>

@@ -17,19 +17,19 @@ const ResearchInterest = () => {
           </div>
           <div className="relative grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">Sustainable Energy Integration</p>
+              <p className="font-semibold text-gray-200">Sustainable Energy <br /> Integration</p>
             </div>
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">Renewable Energy Systems</p>
+              <p className="font-semibold text-gray-200">Renewable Energy <br /> Systems</p>
             </div>
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">Environmental Impact Assessment</p>
+              <p className="font-semibold text-gray-200">Environmental Impact <br /> Assessment</p>
             </div>
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">Advanced Predictive Analytics</p>
+              <p className="font-semibold text-gray-200">Advanced Predictive <br /> Analytics</p>
             </div>
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
-              <p className="font-semibold text-gray-200">Waste Management and Energy Recovery</p>
+              <p className="font-semibold text-gray-200">Waste Management and <br /> Energy Recovery</p>
             </div>
             <div className="px-6 py-12 cursor-pointer text-center transition duration-300 transform bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-2xl">
               <p className="font-semibold text-gray-200">Machine Learning in Energy & Environmental Research</p>

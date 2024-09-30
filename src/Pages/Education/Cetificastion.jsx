@@ -20,7 +20,7 @@ const Cetificastion = () => {
 
   return (
     <div>
-      <section className="text-gray-600 body-font">
+      <section className="body-font">
         <div className="container px-5 pb-10 mx-auto">
           <p className="text-center text-4xl font-bold my-10">Certifications and Training</p>
 

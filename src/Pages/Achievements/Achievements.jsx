@@ -30,7 +30,7 @@ const Achievements = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-bold leading-6">Bangladesh Technical Scholarship</h4>
                     <p className="mt-2     ">
-                      <span className="font-bold">Awarded:</span> Twice for outstanding academic performance
+                      <span className="font-bold">Awarded twice: </span>Once in the first academic year for securing a top merit position in the admission test, and again in the final academic year for outstanding academic performance.
                     </p>
                     <p className="mt-2     ">
                       <span className="font-bold">Years:</span> 1st year and 4th year

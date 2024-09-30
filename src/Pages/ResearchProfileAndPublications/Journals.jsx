@@ -5,10 +5,10 @@ const Journals = () => {
     {
       title: "An Integrated Framework for Assessing Renewable-Energy Supply Chains Using Multicriteria Decision-Making: A Study on Bangladesh",
       figure_title: "Energy Supply Chain Nexus: A Multi-Criteria Decision Analysis",
-      authors: ["A M Almas Shahriyar Azad", "Zarin Tasnim Oishi", "Md Ariful Haque", "Pronob Das", "et al."],
+      authors: ["A M Almas Shahriyar Azad", "Zarin Tasnim Oishi", "Md Ariful Haque", "Pronob Das, et al"],
       year_of_publication: 2024,
       publisher: "Clean Energy (Oxford University Press)",
-      publication_status: "published",
+      publication_status: "Published",
       overview:
         "The depletion in non-renewable energy sources and a fast-growing population in Bangladesh are exacerbating the already existing energy scarcity, highlighting the need for an efficient and robust renewable-energy supply chain. The primary goal of this study is to evaluate the most optimized renewable-energy supply chain based on natural resource availability and government policies of Bangladesh. In the present study, four renewable energy resources, including solar, biomass, wind and hydropower, are studied and nine subcriteria are defined under four primary criteria for each supply chain. Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) and VIseKriterijumska Optimizacija I Kompromisno Resenje (VIKOR) are multicriteria decision-making approaches used in this study to compare and choose the best renewable-energy supply chain. The relative significance of four supply-chain criteria for primary renewable energy in this study, namely energy procurement, production, operations and maintenance costs, and social and environmental impact, is gathered via a survey. The results of this research, supported by a comprehensive sensitivity analysis, indicate that hydropower is the best renewable-energy supply chain, followed by wind as a compromise solution, biomass and solar. The study also demonstrates that no energy source can satisfy all supply-chain criteria alone; each resource is better for a specific criterion—solar is better for procurement, hydropower is significant for production and wind is remarkable for operations and social impact. Therefore, to maximize output, renewable energy sources must be integrated. From Bangladesh’s perspective, for the first time, by using TOPSIS and VIKOR together, this study offers significant insights to establish an efficient and sustainable renewable-energy supply chain for practitioners, academics and policymakers.",
       url: "https://academic.oup.com/ce/article/8/3/1/7656753",
@@ -29,7 +29,7 @@ const Journals = () => {
     {
       title: "Quantifying Methane Emissions and Energy Recovery Potential from Landfill Sites: Insights from Statistical Machine Learning and Predictive Models",
       figure_title: "A Monte Carlo Simulation Model for Sensitivity Analysis of Methane Generation Forecasting by the First Order Decay Method",
-      authors: ["Khaled Mohammad Shifullah Bhuiya", "A M Almas Shahriyar Azad", "Ariful Islam", "et al."],
+      authors: ["Khaled Mohammad Shifullah Bhuiya", "A M Almas Shahriyar Azad", "Ariful Islam, et al"],
       year_of_publication: "",
       publisher: "",
       publication_status: "Accepted with revision, the revision is submitted; Heliyon (Cell Press)",
@@ -41,7 +41,7 @@ const Journals = () => {
     {
       title: "Harnessing the Sun: Framework for Development and Performance Evaluation of AI-Driven Solar Tracker for Optimal Energy Harvesting",
       figure_title: "Transparent Assembly Design of Artificially Intelligent Solar Tracker",
-      authors: ["A M Almas Shahriyar Azad", "Khaled Mohammad Shifullah Bhuiya", "Sumaiya Rashid Shoshi", "et al."],
+      authors: ["A M Almas Shahriyar Azad", "Khaled Mohammad Shifullah Bhuiya", "Sumaiya Rashid Shoshi, et al"],
       year_of_publication: "",
       publisher: "",
       publication_status: "Under Review; Energy Conversion & Management: X (Elsevier)",
@@ -53,7 +53,7 @@ const Journals = () => {
     {
       title: "Advancements in Solar Still Water Desalination: A Comprehensive Review of Design Enhancements and Performance Optimization",
       figure_title: "Thirsty Planet: A Call for Advanced Solar Still Desalination Technologies",
-      authors: ["Sabbir Ahmed Udoy", "Khaled Mohammad Shifullah Bhuiya", "A M Almas Shahriyar Azad", "et al."],
+      authors: ["Sabbir Ahmed Udoy", "Khaled Mohammad Shifullah Bhuiya", "A M Almas Shahriyar Azad, et al"],
       year_of_publication: "",
       publisher: "",
       publication_status: "Under review; Energy Reports (Elsevier)",
@@ -65,7 +65,7 @@ const Journals = () => {
     {
       title: "Design Conceptualization of a Dependable and Affordable Robot to Assist Health Professionals in Combating Infectious Diseases",
       figure_title: "Quality Function Deployment for Robotic Health Assistant: A Blueprint for Patient Care",
-      authors: ["A M Almas Shahriyar Azad", "Zarin Tasnim Oishi", "Jubayer Rahman", "Jamal Tabassum Afrin", "et al."],
+      authors: ["A M Almas Shahriyar Azad", "Zarin Tasnim Oishi", "Jubayer Rahman Jamal", "Tabassum Afrin, et al", "et al."],
       year_of_publication: "",
       publisher: "",
       publication_status: "Under Review; Journal of Mechanical Engineering (Sciendo)",
@@ -94,15 +94,14 @@ const Journals = () => {
         <section className="text-gray-600 body-font mb-10" key={i}>
           <div className="container mx-auto flex flex-col">
             <div className="lg:w-4/6 mx-auto">
-              <div className="rounded-lg h-64 overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <img alt="content" className="h-full w-full" src={journal.img} />
               </div>
               <p className="text-center mt-2 text-sm text-gray-500">{journal.figure_title}</p>
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 sm:pr-8 sm:py-8">
                   <div>
-                    <h2 className="font-medium title-font text-gray-900 text-lg">Authors:</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+                    <h2 className="font-semibold title-font text-green-600 text-lg">Authors:</h2>
                     <ul className="list-disc pl-5">
                       {journal.authors.map((author, index) => (
                         <li key={index} className="text-gray-700">
@@ -110,22 +109,41 @@ const Journals = () => {
                         </li>
                       ))}
                     </ul>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Publisher: {journal.publisher}</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Year of Publication: {journal.year_of_publication}</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Publication Status: {journal.publication_status}</h2>
+
+                    {/* Conditionally render Publisher */}
+                    {journal.publisher && (
+                      <h2 className="title-font mt-4 text-gray-900 text-lg">
+                        <h2 className="font-semibold title-font text-green-600 text-lg">Publisher:</h2> {journal.publisher}
+                      </h2>
+                    )}
+
+                    {/* Conditionally render Year of Publication */}
+                    {journal.year_of_publication && (
+                      <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                        <span className="font-semibold title-font text-green-600 text-lg">Year of Publication:</span> {journal.year_of_publication}
+                      </h2>
+                    )}
+
+                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                      {" "}
+                      <span className="font-semibold title-font text-green-600 text-lg">Publication Status: </span>
+                      {journal.publication_status}
+                    </h2>
                   </div>
                 </div>
                 <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                   <h2 className="title-font text-xl font-bold text-green-600 mb-3 text-justify">{journal.title}</h2>
                   <p className="leading-relaxed text-lg mb-4 text-justify">{journal.overview}</p>
-                  <a href={journal.url} target="_blank" rel="noopener noreferrer" className="text-green-500 inline-flex items-center">
-                    Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+
+                  {/* Conditionally render Learn More link */}
+                  {journal.url && (
+                    <a href={journal.url} target="_blank" rel="noopener noreferrer" className="text-green-500 inline-flex items-center">
+                      Learn More
+                      <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

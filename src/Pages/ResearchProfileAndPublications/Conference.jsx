@@ -5,7 +5,7 @@ const Conference = () => {
     {
       title: "Assessment of Energy Consumption and Emissions of Fabric Production Lines in Bangladesh",
       figure_title: "Monthly Production and Energy Consumption Metrics in the Assessed Fabric Production Line",
-      authors: ["Khaled Mohammad Shifullah Bhuiya, A M Almas Shahriyar Azad, et al."],
+      authors: ["Khaled Mohammad Shifullah Bhuiya", "A M Almas Shahriyar Azad, et al."],
       publisher: "SSRN (Elsevier)",
       year_of_publication: "2024",
       publication_status: "Published",
@@ -18,7 +18,7 @@ const Conference = () => {
     {
       title: "Integrated Framework for Investigating Relationship Between Overall Equipment Effectiveness (OEE) and Downtime",
       figure_title: "Overall Equipment Effectiveness and Machine Parameters over Six Days",
-      authors: ["Md. Ariful Haque, A M Almas Shahriyar Azad, Moumita Ghosh, Zarin Tasnim Oishi, Md. Mohibul Islam"],
+      authors: ["Md. Ariful Haque", "A M Almas Shahriyar Azad", "Moumita Ghosh", "Zarin Tasnim Oishi", "Md. Mohibul Islam"],
       publisher: "International Conference on Industrial & Mechanical Engineering and Operations Management (IEOM)",
       year_of_publication: "2022",
       publication_status: "Published",
@@ -31,7 +31,7 @@ const Conference = () => {
     {
       title: "Overall Equipment Effectiveness (OEE) Calculation in Manufacturing Industries: A Case Study",
       figure_title: "3D View of Overall Equipment Effectiveness and its Components",
-      authors: ["Md. Ariful Haque, A M Almas Shahriyar Azad, et al"],
+      authors: ["Md. Ariful Haque, Md. Mahmodur Rahman", "Shohag Miah", "A M Almas Shahriyar Azad."],
       publisher: "International Conference on Mechanical, Industrial and Materials Engineering (ICMIME)",
       year_of_publication: "2022",
       publication_status: "Published",
@@ -49,15 +49,14 @@ const Conference = () => {
         <section className="text-gray-600 body-font mb-10" key={i}>
           <div className="container mx-auto flex flex-col">
             <div className="lg:w-4/6 mx-auto">
-              <div className="rounded-lg h-64 overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <img alt="content" className="h-full w-full" src={journal.img} />
               </div>
               <p className="text-center mt-2 text-sm text-gray-500">{journal.figure_title}</p>
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 sm:pr-8 sm:py-8">
                   <div>
-                    <h2 className="font-medium title-font text-gray-900 text-lg">Authors:</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+                    <h2 className="font-semibold title-font text-green-600 text-lg">Authors:</h2>
                     <ul className="list-disc pl-5">
                       {journal.authors.map((author, index) => (
                         <li key={index} className="text-gray-700">
@@ -65,22 +64,41 @@ const Conference = () => {
                         </li>
                       ))}
                     </ul>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Publisher: {journal.publisher}</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Year of Publication: {journal.year_of_publication}</h2>
-                    <div className="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Publication Status: {journal.publication_status}</h2>
+
+                    {/* Conditionally render Publisher */}
+                    {journal.publisher && (
+                      <h2 className="title-font mt-4 text-gray-900 text-lg">
+                        <h2 className="font-semibold title-font text-green-600 text-lg">Publisher:</h2> {journal.publisher}
+                      </h2>
+                    )}
+
+                    {/* Conditionally render Year of Publication */}
+                    {journal.year_of_publication && (
+                      <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                        <span className="font-semibold title-font text-green-600 text-lg">Year of Publication:</span> {journal.year_of_publication}
+                      </h2>
+                    )}
+
+                    <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                      {" "}
+                      <span className="font-semibold title-font text-green-600 text-lg">Publication Status: </span>
+                      {journal.publication_status}
+                    </h2>
                   </div>
                 </div>
                 <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                   <h2 className="title-font text-xl font-bold text-green-600 mb-3 text-justify">{journal.title}</h2>
                   <p className="leading-relaxed text-lg mb-4 text-justify">{journal.overview}</p>
-                  <a href={journal.url} target="_blank" rel="noopener noreferrer" className="text-green-500 inline-flex items-center">
-                    Learn More
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
+
+                  {/* Conditionally render Learn More link */}
+                  {journal.url && (
+                    <a href={journal.url} target="_blank" rel="noopener noreferrer" className="text-green-500 inline-flex items-center">
+                      Learn More
+                      <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

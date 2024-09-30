@@ -58,7 +58,7 @@ const CurrentResearchInitiatives = () => {
       <Hero quotes={quotes} />
 
       <div className="bg-gray-100 min-h-screen p-6 text-justify">
-        <h1 className="text-3xl font-bold text-center mb-8">Research Projects</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">Current Research Initiatives</h1>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">

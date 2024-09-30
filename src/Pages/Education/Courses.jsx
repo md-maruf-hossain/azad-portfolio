@@ -66,7 +66,7 @@ const Courses = () => {
 
   return (
     <div>
-      <p className="text-center text-4xl font-bold py-10">Certifications and Training</p>
+      <p className="text-center text-4xl font-bold py-10">Advanced Online Courses</p>
 
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 pb-24 mx-auto">
