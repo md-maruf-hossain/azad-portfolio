@@ -7,9 +7,7 @@ const Profile = () => {
         {/* img starts */}
         <div className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-auto">
           <img src="/src/assets/profile.JPG" alt="proile picture" />
-          <h2 className="mt-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">
-            Engineer | Researcher
-          </h2>
+          <h2 className="mt-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center">Engineer | Researcher</h2>
         </div>
         {/* text */}
         <div className="flex flex-col col-span-12 p-6 lg:col-span-6 lg:p-10 text-justify text-xl">
@@ -29,9 +27,11 @@ const Profile = () => {
           </div>
           <div className="pt-6 pb-4 space-y-2">
             {" "}
-            <button className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-600 hover:bg-green-700 focus:shadow-outline focus:outline-none">
-              DOWNLOAD MY RESUME
-            </button>
+            <a rel="noopener noreferrer" href="almas-shahriar-azad-resume.pdf" download="almas-shahriar-azad-resume.pdf">
+              <button className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-600 hover:bg-green-700 focus:shadow-outline focus:outline-none">
+                DOWNLOAD MY RESUME
+              </button>
+            </a>
           </div>
         </div>
       </div>
